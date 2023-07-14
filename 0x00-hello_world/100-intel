@@ -1,8 +1,2 @@
-#nclude <stdio.h>
-/**
-* main - entry point
-* return: 0 (success)
-*/
-int main(void)
-{
-
+#!bin/bash
+gss -s _masm=intel $CFILE
