@@ -1,29 +1,30 @@
-#include<stdio.h>
+#include <stdio.h>
+
 /**
- * main - A program that prints diffrent comibinations of 2 digits
- * Return: 0 (Success)
+ * main - A program that Prints all possible combinations of two different digits,
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
-	int f = '0';
-	int s = '0';
+	int digit1, digit2;
 
-	for (tens = '0'; tens <= '9'; tens ++)
+	for (digit1 = 0; digit1 < 9; digit1++)
 	{
-		for (ones = '0'; ones <= '9'; ones++)
+		for (digit2 = digit1 + 1; digit2 < 10; digit2++)
 		{
-			if (!((ones == tense) || (tens > ones )))
-			{
-				putchar(tens);
-				putchar(ones);
-				if (!((ones == '9' && > tense == '0'))
-				{
-					putchar(',');
-					putchar(' ');
-				}
-			}
-		 }
+			putchar((digit1 % 10) + '0');
+			putchar((digit2 % 10) + '0');
+
+			if (digit1 == 8 && digit2 == 9)
+				continue;
+			
+			putchar(',');
+			putchar(' ');
+		}
 	}
+
 	putchar('\n');
+
 	return (0);
 }
