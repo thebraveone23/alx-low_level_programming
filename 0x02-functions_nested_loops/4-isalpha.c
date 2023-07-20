@@ -1,21 +1,18 @@
 #include "main.h"
-/*
- * File: 4-isalpha.c
- * Auth: Brennan D Baraban
- */
-
-#include "holberton.h"
 
 /**
- * _isalpha - Checks if a character is alphabetic.
- * @c: The character to be checked.
+ * _isalpha - checks if character is letter, lowercase or uppercase
+ * and return 1 if yes and 0 if no.
  *
- * Return: 1 if character is letter, lowercase or uppercase, 0 otherwise.
+ * @c: char type
+ *
+ * Return: 1 if c is letter, lowercase or uppercase
+ * and 0 otherwise.
  */
+
 int _isalpha(int c)
 {
-	if ((c >= 'a' && c <= 'z') ||
-	    (c >= 'A' && c <= 'Z'))
+	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
 		return (1);
 	else
 		return (0);
