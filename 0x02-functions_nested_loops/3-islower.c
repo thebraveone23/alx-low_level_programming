@@ -1,13 +1,6 @@
-/*
- * File: 3-islower.c
- * Auth: Brennan D Baraban
- */
-
-#include "holberton.h"
-
+int main(void)
 /**
- * _islower - Checks if a character is lowercase.
- * @c: The character to be checked.
+ * Main - A program that  Checks if a character is lowercase
  *
  * Return: 1 if character is lowercase, 0 otherwise.
  */
