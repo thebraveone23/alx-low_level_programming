@@ -1,22 +1,19 @@
-#include "holberton.h"
+#include "main.h"
+
 /**
- * print_last_digit - print the last digit of a number
- * @n: int type number
- * Return: return value of last digit
+ * print_last_digit - Prints the last digit of a number.
+ * @n: The number in question.
+ *
+ * Return: Value of the last digit.
  */
 int print_last_digit(int n)
 {
-	int b;
+	int last_digit = n % 10;
 
-	b = n % 10;
-	if (n < 0)
-	{
-		_putchar(-b + '45');
-		return (-b);
-	}
-	else
-	{
-		_putchar(b + '45');
-		return (b);
-	}
+	if (last_digit < 0)
+		last_digit *= -1;
+
+	_putchar(last_digit + '0');
+
+	return (last_digit);
 }
