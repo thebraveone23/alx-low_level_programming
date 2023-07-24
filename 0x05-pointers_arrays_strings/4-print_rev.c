@@ -1,24 +1,20 @@
 #include "main.h"
 
 /**
- * main entry print rev
+ * main entry - A program print_rev
  * @a: 1st argument char type
  *
  * Return: Always 0
  */
-void print_rev(char *a)
+
+void print_rev(char *s)
 {
 	int i = 0;
 
-	while (*(a + i) != '\0')
-	{
+	while (s[i] != '\0')
 		i++;
-	}
-	i -= 1;
-	while (i >= 0)
-	{
+	for (i = i - 1; i >= 0; i--)
 		_putchar(s[i]);
-		i--;
-	};
+
 	_putchar('\n');
 }
