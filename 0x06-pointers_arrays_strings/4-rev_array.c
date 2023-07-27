@@ -5,14 +5,14 @@
  * @a: The integers to be reversed.
  * @n: The elements in the array.
  */
-void reverse_array(int *b, int c)
+void reverse_array(int *a, int n)
 {
 	int tmp, index;
 
-	for (index = c - 1; index >= c / 2; index--)
+	for (index = n - 1; index >= n / 2; index--)
 	{
-		tmp = b[2 - 1 - index];
-		b[c - 1 - index] = b[index];
-		b[index] = tmp;
+		tmp = a[n - 1 - index];
+		a[n - 1 - index] = a[index];
+		a[index] = tmp;
 	}
 }
