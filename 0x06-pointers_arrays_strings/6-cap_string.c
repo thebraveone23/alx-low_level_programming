@@ -1,4 +1,3 @@
-#include "main.h"
 /**
  *cap_string - A function that  changes all lowercase letters
  *Return: return pointer
