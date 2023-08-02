@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include <string.h>
 /**
- * memcpy - a program that  copy memory area
+ * memcpy - A program that  copy memory areaS.
  *
  * @dest: memory from source
  * @src: copied memory
@@ -13,7 +14,7 @@ char *memcpy(char *dest, char *src, unsigned int n)
 	int l = 0;
 	int i = n;
 
-	for (l < i; l++)
+	for (; l < i; l++)
 	{
 		dest[l] = src[l];
 		n--;
